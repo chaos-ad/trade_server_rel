@@ -11,7 +11,7 @@ clean:
 	rm -rfv erl_crash.dump
 
 distclean: clean
-	rm -rfv deps
+	rm -rfv deps rel/trade_server
 
 release: compile
 	./rebar generate
