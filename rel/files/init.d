@@ -11,36 +11,4 @@
 ### END INIT INFO
 
 export HOME=/opt/trade/trade_server/
-BASEDIR=/opt/trade/trade_server/
-
-case "$1" in
-  start)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  stop)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  restart)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  reboot)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  ping)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  console)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  console_clean)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  attach)
-  $BASEDIR/bin/trade_server "$1"
-  ;;
-  *)
-  echo "Usage: $0 {start|stop|restart|reboot|ping|console|console_clean|attach}"
-  exit 1
-esac
-
-exit 0
+/opt/trade/trade_server/bin/trade_server "$1"
